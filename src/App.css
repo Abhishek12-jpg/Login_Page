@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0b0f;
+  color: white;
+}
+
+/* Main page */
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background:
+    radial-gradient(circle at 20% 20%, #3b0764 0%, transparent 30%),
+    radial-gradient(circle at 80% 80%, #172554 0%, transparent 30%),
+    #0b0b0f;
+}
+
+/* Login card */
+
+.login-box {
+  width: 100%;
+  max-width: 410px;
+  padding: 45px 40px;
+  background: rgba(20, 20, 25, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(124, 58, 237, 0.08);
+  backdrop-filter: blur(15px);
+}
+
+/* Logo / Brand */
+
+.login-box h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #f97316,
+    #ec4899,
+    #8b5cf6
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  text-align: center;
+  color: #8f8f98;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+/* Labels */
+
+.login-box label {
+  display: block;
+  color: #d4d4d8;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Inputs */
+
+.login-box input[type="email"],
+.password-container input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+
+  background: #141419;
+  border: 1px solid #2a2a32;
+  border-radius: 12px;
+
+  color: white;
+  font-size: 14px;
+
+  outline: none;
+  transition: 0.25s;
+}
+
+.login-box input::placeholder {
+  color: #666670;
+}
+
+.login-box input[type="email"]:focus,
+.password-container input:focus {
+  border-color: #8b5cf6;
+
+  box-shadow:
+    0 0 0 3px rgba(139, 92, 246, 0.12);
+}
+
+/* Password */
+
+.password-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.password-container input {
+  padding-right: 70px;
+}
+
+.password-container button {
+  position: absolute;
+
+  right: 10px;
+  top: 8px;
+
+  height: 34px;
+  padding: 0 9px;
+
+  background: transparent;
+  border: none;
+
+  color: #a78bfa;
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.password-container button:hover {
+  color: #c4b5fd;
+}
+
+/* Remember + Forgot */
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 5px 0 25px;
+}
+
+.remember {
+  display: flex !important;
+  align-items: center;
+
+  gap: 7px;
+
+  margin: 0 !important;
+
+  color: #8f8f98 !important;
+  font-weight: normal !important;
+}
+
+.remember input {
+  width: 15px;
+  height: 15px;
+
+  accent-color: #8b5cf6;
+
+  cursor: pointer;
+}
+
+.options a,
+.signup a {
+  color: #a78bfa;
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.options a:hover,
+.signup a:hover {
+  color: #c4b5fd;
+}
+
+/* Login button */
+
+.login-button {
+  width: 100%;
+  height: 52px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(
+    90deg,
+    #7c3aed,
+    #db2777
+  );
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+
+  box-shadow:
+    0 10px 25px rgba(124, 58, 237, 0.25);
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 15px 35px rgba(124, 58, 237, 0.35);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+/* Signup */
+
+.signup {
+  text-align: center;
+
+  margin-top: 28px;
+
+  color: #71717a;
+
+  font-size: 13px;
+}
+/* =========================
+   SIGNUP PAGE
+========================= */
+
+.signup-page .login-box {
+  max-width: 430px;
+}
+
+.signup-page h1 {
+  margin-bottom: 8px;
+}
+
+.signup-page .subtitle {
+  margin-bottom: 28px;
+}
+
+/* Signup input spacing */
+
+.signup-page input[type="text"],
+.signup-page input[type="email"] {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+
+  background: #141419;
+  border: 1px solid #2a2a32;
+  border-radius: 12px;
+
+  color: white;
+  font-size: 14px;
+
+  outline: none;
+  transition: 0.25s;
+
+  margin-bottom: 20px;
+}
+
+.signup-page input[type="text"]:focus,
+.signup-page input[type="email"]:focus {
+  border-color: #8b5cf6;
+
+  box-shadow:
+    0 0 0 3px rgba(139, 92, 246, 0.12);
+}
+
+/* Signup password */
+
+.signup-page .password-container {
+  margin-bottom: 25px;
+}
+
+/* Signup button */
+
+.signup-page .login-button {
+  margin-top: 5px;
+}
+
+/* Bottom login text */
+
+.signup-page .signup {
+  margin-top: 28px;
+}
